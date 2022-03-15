@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Example form</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Contract confirmation</legend>
+            <input type="checkbox" id="approval" name="approval" value="1" required>
+            <label for="approval">I accept the accuracy of the following information and confirm the contract</label><br/>
+            <input type="submit" id="btnR" name="btnR" value="Save form">
+            <input type="reset" id="btnC" name="btnC" value="Clear form">
+   
+
+        </fieldset>
+        <fieldset>
+            <legend>User information</legend>
+            <table>
+                <tr>
+                    <td>Form security ID</td>
+                    <td>
+                        <input type="text" name="sID" id="sID" value="asfg" disabled>
+                        <input type="hidden" name="sID2" id="sID2" value="asfg">
+                    </td>
+                </tr>
+                <tr>
+                    <td>First name</td>
+                    <td>
+                        <input type="text" name="fName" id="fName" placeholder="Please enter your name..." required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last name</td>
+                    <td>
+                        <input type="text" name="lName" id="lName" placeholder="Please enter your last name..." required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>
+                        <input type="number" name="aName" id="aName" min="20" max="50" step="2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td>
+                        <input type="email" name="mName" id="mName">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Add photo (Optional)</td>
+                    <td>
+                        <input type="file" name="file" id="file">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="passw" id="passw" required>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+</html>
